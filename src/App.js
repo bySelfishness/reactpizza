@@ -15,10 +15,10 @@ function App() {
             <Categories />
             <Sort />
           </div>
-          <h2 className="content__title">Все пиццы</h2>
+          <h2 className="content__title">Усі піцци</h2>
           <div className="content__items">
             {pizzas.map((obj) => (
-              <PizzaBlock {...obj} />
+              <PizzaBlock key={obj.id} {...obj} />
             ))}
           </div>
         </div>
